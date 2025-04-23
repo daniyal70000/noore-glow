@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nooré Glow – Peach Blossom Radiance Cream</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff6f9;
+      color: #4a3d3d;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 { color: #d12b5b; }
+    .price { font-size: 1.4rem; color: #f44336; margin: 10px 0; }
+    img { width: 100%; border-radius: 12px; margin-bottom: 20px; }
+    ul { text-align: left; max-width: 500px; margin: 20px auto; }
+    form { margin-top: 40px; text-align: left; max-width: 500px; margin-left: auto; margin-right: auto; }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .submit-btn {
+      background: #d12b5b;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: block;
+      margin-top: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="file-QCV3ZWVzYsp2nZhu4oppSq" alt="Nooré Glow Cream Jar">
+    <h1>Nooré Glow – Peach Blossom Radiance Cream</h1>
+    <p class="price">Only ₹499</p>
+    <p>Discover the secret to glowing, radiant skin with <strong>Nooré Glow</strong>. Infused with peach blossom extract, this lightweight cream revives dull skin instantly.</p>
+    <ul>
+      <li>Instant visible glow</li>
+      <li>Dermatologist Approved</li>
+      <li>Paraben Free & Cruelty Free</li>
+      <li>Suitable for all skin types</li>
+    </ul>
+
+    <form onsubmit="return sendToWhatsApp(this)">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <textarea name="address" placeholder="Delivery Address" required></textarea>
+      <button type="submit" class="submit-btn">Order Now on WhatsApp</button>
+    </form>
+
+    <hr style="margin: 40px 0;">
+    <img src="file-Q4A5TEXfLV7zDkKYJEgY23" alt="Nooré Glow Emotional Ad">
+    <img src="file-VHMcN1Zss9iCwx2CPeuLiU" alt="Nooré Glow Label Back">
+  </div>
+
+  <script>
+    function sendToWhatsApp(form) {
+      var name = form.name.value;
+      var phone = form.phone.value;
+      var address = form.address.value;
+      var message = encodeURIComponent("Name: " + name + "\nPhone: " + phone + "\nAddress: " + address);
+      var url = "https://wa.me/919213621411?text=" + message;
+      window.open(url, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>
